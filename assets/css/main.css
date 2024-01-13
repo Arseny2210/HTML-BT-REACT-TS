@@ -44,6 +44,14 @@ body {
   font-size: var(--main-size);
 }
 
+/* main-info */
+.main-info .container .col .main-repos-info .name {
+  display: inline-block;
+}
+.main-info .container .col .main-repos-info .repositor-info {
+  display: inline-block;
+}
+
 @media (min-width: 0px) and (max-width: 576px) {
   .container nav .container-fluid {
     justify-content: center;
