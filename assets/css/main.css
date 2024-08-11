@@ -13,6 +13,12 @@
   font-family: "Roboto Mono", monospace;
   color: white;
 }
+
+header,
+section {
+  padding: 20px 0px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -44,12 +50,81 @@ body {
   font-size: var(--main-size);
 }
 
+/* INDEX */
 /* main-info */
-.main-info .container .col .main-repos-info .name {
+.main-info .row {
+  justify-content: center;
+}
+
+.main-info .container .wrap-info-person {
+  padding: 5px 0px;
+}
+
+.main-info .container .wrap-info-person .wrap-text-info-person {
+  vertical-align: middle;
+}
+
+.main-info .container .wrap-info-person .wrap-img {
+  position: relative;
   display: inline-block;
 }
-.main-info .container .col .main-repos-info .repositor-info {
+
+.main-info .container .wrap-info-person .wrap-img::after {
+  content: "";
+  background: rgba(196, 196, 196, 0.6);
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 100px;
+}
+
+.main-info .container .wrap-info-person .wrap-img img {
+  border-radius: 100px;
+}
+
+.main-info .container .wrap-info-person .wrap-img,
+.wrap-text-info-person {
   display: inline-block;
+}
+
+.main-info .container .wrap-info-person .main-repos-info .name {
+  display: inline-block;
+}
+.main-info .container .wrap-info-person .main-repos-info .repositor-info {
+  display: inline-block;
+}
+
+/* PERSON */
+/* ----- main-repository ----- */
+
+.main-repository .main-img {
+  text-align: center;
+}
+
+.main-repository .main-img .wrap-main-img {
+  position: relative;
+  display: inline-block;
+}
+.main-repository .main-img .wrap-main-img::after {
+  content: "";
+  background: rgba(196, 196, 196, 0.6);
+  display: block;
+  position: absolute;
+  width: 147px;
+  height: 147px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 100px;
+}
+
+.main-repository .main-img .wrap-main-img img {
+  object-fit: cover;
+  border-radius: 100px;
 }
 
 @media (min-width: 0px) and (max-width: 576px) {
